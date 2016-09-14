@@ -16,4 +16,5 @@
     <color name="lighter_gray">#D3D3D3</color>
     <color name="black_gray">#3C3D3D</color>
     <color name="green">#049E12</color>
+    <color name="toolbar_color">#528EE3</color>
 </resources>

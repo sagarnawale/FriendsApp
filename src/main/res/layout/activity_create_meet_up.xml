@@ -50,8 +50,7 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp"
-                style="@android:style/Widget.DeviceDefault.DropDownItem"/>
+                android:layout_marginBottom="10dp"/>
 
             <!--spinner1 for select date-->
             <TextView
@@ -129,11 +128,11 @@
 
 
                 <ImageView
-                    android:layout_width="59dp"
-                    android:layout_height="59dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:id="@+id/camera"
                     android:layout_marginLeft="20dp"
-                    android:src="@mipmap/ic_camera" />
+                    android:src="@drawable/ic_camera" />
 
                 <Button
                     android:id="@+id/register_btn"
@@ -153,7 +152,7 @@
                     android:layout_height="50dp"
                     android:id="@+id/group"
                     android:layout_marginLeft="20dp"
-                    android:src="@mipmap/ic_group_add" />
+                    android:src="@drawable/ic_group_add" />
 
             </LinearLayout>
 

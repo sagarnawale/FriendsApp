@@ -17,40 +17,14 @@ public class MainActivity extends AppCompatActivity {
 
         if(v.getId() == R.id.create_meetup_popup){
             Intent intent = new Intent(this, CreateMeetUpActivity.class);
-            startActivity(intent);/**
-        }else if(v.getId() == R.id.my_profile){
-            Intent intent = new Intent(this, MyProfileActivity.class);
             startActivity(intent);
-        }else if(v.getId() == R.id.login){
-            Intent intent = new Intent(this, LoginActivity.class);
+        }else if(v.getId() == R.id.discover){
+            Intent intent = new Intent(this, DiscoverActivity.class);
             startActivity(intent);
-        }else if(v.getId() == R.id.search){
-            Intent intent = new Intent(this, SearchActivity.class);
-            startActivity(intent);
-        }else if(v.getId() == R.id.meet_window) {
-            Intent intent = new Intent(this, CreatMeetUpActivity.class);
-            startActivity(intent);
-        }else if(v.getId() == R.id.comment_on_meetup_window) {
-            Intent intent = new Intent(this, CustomViewIconTextTabsActivity.class);
-            startActivity(intent);
-        }else if(v.getId() == R.id.other_profile) {
-            Intent intent = new Intent(this, OtherProfileActivity.class);
-            startActivity(intent);
-        }else if(v.getId() == R.id.walk_through_screen) {
-            Intent intent = new Intent(this, WalkThroughActivity.class);
-            startActivity(intent);
-        }else if(v.getId() == R.id.details_of_meetup) {
-            Intent intent = new Intent(this, MeetupDetailsActivity.class);
-            startActivity(intent);
-        }else if(v.getId() == R.id.discover_tinder) {
-            Intent intent = new Intent(this, DiscoverTinderActivity.class);
-            startActivity(intent);
-        }else if(v.getId() == R.id.nearby) {
-            Intent intent = new Intent(this, MapsActivity.class);
+        }else if(v.getId() == R.id.meetup_details){
+            Intent intent = new Intent(this, MeetUpDetailsActivity.class);
             startActivity(intent);
         }
-*/
     }
-             }
 
 }

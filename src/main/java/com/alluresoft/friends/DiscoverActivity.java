@@ -17,11 +17,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class DiscoverActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener, View.OnClickListener{
 
-    int[] mResources = {R.drawable.party1, R.drawable.profile_pic, R.drawable.profile_pic1};
+    int[] mResources = {R.drawable.profile_pic1, R.drawable.profile_pic, R.drawable.profile_pic1};
 
     ViewPager mViewPager;
     private CustomPagerAdapter mAdapter;
@@ -29,9 +30,9 @@ public class DiscoverActivity extends AppCompatActivity implements ViewPager.OnP
     private int dotsCount;
     private ImageView[] dots;
 
-    private ImageView friend1,friend2,friend3,friend4,friend5;
+    private ImageView friend1,friend2,friend3,friend4;
     private ImageView nearby,followers,profile,discover,favourites;
-    private Button attend,shareIt;
+    private Button attend,shareIt,friend5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +42,9 @@ public class DiscoverActivity extends AppCompatActivity implements ViewPager.OnP
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        TextView activity_name=(TextView) findViewById(R.id.activity_name);
+        activity_name.setText("Discover");
 
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.profile_pic1);
         Bitmap circularBitmap = RoundedImageView.getRoundedCroppedBitmap(bitmap, 100);
@@ -57,8 +61,7 @@ public class DiscoverActivity extends AppCompatActivity implements ViewPager.OnP
         friend4=(ImageView)findViewById(R.id.friend4);
         friend4.setImageBitmap(circularBitmap);
 
-        friend5=(ImageView)findViewById(R.id.friend5);
-        friend5.setImageBitmap(circularBitmap);
+        friend5=(Button)findViewById(R.id.friend5);
 
         attend=(Button) findViewById(R.id.attend_btn_discover);
         attend.setOnClickListener(new View.OnClickListener() {

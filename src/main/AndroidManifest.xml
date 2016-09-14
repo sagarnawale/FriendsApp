@@ -16,7 +16,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".CreateMeetUpActivity" />
-        <activity android:name=".DiscoverActivity"></activity>
+        <activity
+            android:name=".DiscoverActivity"
+            android:label="">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MeetUpDetailsActivity"
+            android:label="">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>
